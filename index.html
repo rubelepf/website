@@ -1,0 +1,220 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+	<DIV class="uniform">
+<DIV class="object3d">
+<!-- The Stage -->
+<div class="reusable-rect main-stage">
+	<div class="sides side1"></div>
+	<div class="sides side2"></div>
+
+	<div class="reusable-rect stairs stair1">
+		<div class="sides side1"></div>
+		<div class="sides side2"></div>
+	</div>
+	<div class="reusable-rect stairs stair2">
+		<div class="sides side1"></div>
+		<div class="sides side2"></div>
+	</div>
+	<div class="reusable-rect stairs stair3">
+		<div class="sides side1"></div>
+		<div class="sides side2"></div>
+	</div>
+
+	<!-- Elements over Stage -->
+	<div class="main-elements">
+		<!-- Child Block 2x [LEFT] -->
+	<div class="group_element classA group_c2">
+		<div class="reusable-rect stage-over c2">
+			<div class="sides side1"></div>
+			<div class="sides side2"></div>
+		</div>
+		<div class="reusable-rect stage-over c2-left">
+			<div class="sides side1"></div>
+			<div class="sides side2"></div>
+		</div>
+		<div class="reusable-rect stage-over c2-right">
+			<div class="sides side1"></div>
+			<div class="sides side2"></div>
+		</div>
+		<div class="reusable-rect stage-over c2-top">
+			<div class="sides side1"></div>
+			<div class="sides side2"></div>
+		</div>
+		<div class="nile"></div>
+	</div>
+
+		<!-- Child Block 2x [RIGHT] -->
+	<div class="group_element classA group_c4">
+		<div class="reusable-rect stage-over c2">
+			<div class="sides side1"></div>
+			<div class="sides side2"></div>
+		</div>
+		<div class="reusable-rect stage-over c2-left">
+			<div class="sides side1"></div>
+			<div class="sides side2"></div>
+		</div>
+		<div class="reusable-rect stage-over c2-right">
+			<div class="sides side1"></div>
+			<div class="sides side2"></div>
+		</div>
+		<div class="reusable-rect stage-over c2-top">
+			<div class="sides side1"></div>
+			<div class="sides side2"></div>
+		</div>
+		<div class="nile"></div>
+	</div>
+
+		<!-- Child Block x [LEFT] -->
+	<div class="group_element classB group_c1">
+		<div class="reusable-rect stage-over c2">
+			<div class="sides side1"></div>
+			<div class="sides side2"></div>
+		</div>
+		<div class="reusable-rect stage-over c2-left">
+			<div class="sides side1"></div>
+			<div class="sides side2"></div>
+		</div>
+		<div class="reusable-rect stage-over c2-right">
+			<div class="sides side1"></div>
+			<div class="sides side2"></div>
+		</div>
+		<div class="reusable-rect stage-over c2-top">
+			<div class="sides side1"></div>
+			<div class="sides side2"></div>
+		</div>
+		<div class="nile"></div>
+	</div>
+
+		<!-- Child Block x [RIGHT] -->
+	<div class="group_element classB group_c3">
+		<div class="reusable-rect stage-over c2">
+			<div class="sides side1"></div>
+			<div class="sides side2"></div>
+		</div>
+		<div class="reusable-rect stage-over c2-left">
+			<div class="sides side1"></div>
+			<div class="sides side2"></div>
+		</div>
+		<div class="reusable-rect stage-over c2-right">
+			<div class="sides side1"></div>
+			<div class="sides side2"></div>
+		</div>
+		<div class="reusable-rect stage-over c2-top">
+			<div class="sides side1"></div>
+			<div class="sides side2"></div>
+		</div>
+		<div class="nile"></div>
+	</div>
+
+		<!-- Mother Block -->
+	<div class="group_element group_m">
+		<div class="reusable-rect stage-over c3">
+		<div class="sides side1"></div>
+		<div class="sides side2"></div>
+		</div>
+		<div class="reusable-rect stage-over c3-center">
+		<div class="sides side1"></div>
+		<div class="sides side2"></div>
+			<div class="reusable-rect stage-over tile-tilt">
+			<div class="sides side1"></div>
+			<div class="sides side2"></div>
+				<div class="reusable-rect stage-over tile-head">
+				<div class="sides side1"></div>
+				<div class="sides side2"></div>
+				</div>
+			<div class="nile"></div>
+			</div>
+		</div>
+		<div class="reusable-rect stage-over c3-left">
+		<div class="sides side1"></div>
+		<div class="sides side2"></div>
+			<div class="reusable-rect stage-over tile-tilt">
+			<div class="sides side1"></div>
+			<div class="sides side2"></div>
+			</div>
+		</div>
+		<div class="reusable-rect stage-over c3-right">
+		<div class="sides side1"></div>
+		<div class="sides side2"></div>
+			<div class="reusable-rect stage-over tile-tilt">
+			<div class="sides side1"></div>
+			<div class="sides side2"></div>
+			</div>
+		</div>
+		<div class="nile"></div>
+		<!-- Mother Circle -->
+		<div class="thick-circle stage-over"> <div></div> </div>
+	</div>
+	</div>
+</div>
+</DIV>
+</DIV>
+
+<!-- Camera Controls for the actual 3D feeling -->
+<span id="controls" class="hide">
+<span class="title">Rotation</span>
+<label>
+<span title="Horizontal Rotation ↔">X</span>
+<input type="range" id="y_axis" min="-180" max="180" value="0" onchange="apply(this, '--y', 'deg')" oninput="apply(this, '--y', 'deg')" step="0.1"/>
+<span></span>
+</label>
+
+<label>
+<span title="Vertical Rotation ↕">Y</span>
+<input type="range" id="x_axis" min="-180" max="180" value="60" onchange="apply(this, '--x', 'deg')" oninput="apply(this, '--x', 'deg')" step="0.1"/>
+<span></span>
+</label>
+
+<label>
+<span title="Rotation ↔ ↕">Z</span>
+<input type="range" id="z_axis" min="-180" max="180" value="-60" onchange="apply(this, '--z', 'deg')" oninput="apply(this, '--z', 'deg')" step="0.1"/>
+<span></span>
+</label>
+
+<span class="title">Transform</span>
+<label>
+<span title="Translate X">X</span>
+<input type="range" id="ty_axis" min="-2000" max="2000" value="0" onchange="apply(this, '--ty', 'px')" oninput="apply(this, '--ty', 'px')" step="1"/>
+<span></span>
+</label>
+
+<label>
+<span title="Translate Y">Y</span>
+<input type="range" id="tz_axis" min="-2000" max="2000" value="130" onchange="apply(this, '--tz', 'px')" oninput="apply(this, '--tz', 'px')" step="1"/>
+<span></span>
+</label>
+
+<label>
+<span title="Translate Z">Z</span>
+<input type="range" id="tx_axis" min="-2000" max="1000" value="0" onchange="apply(this, '--tx', 'px')" oninput="apply(this, '--tx', 'px')" step="1"/>
+<span></span>
+</label>
+
+<label>
+<span title="Scale">S</span>
+<input type="range" id="scale" min="0.1" max="2" value="0.6" onchange="apply(this, '--s')" oninput="apply(this, '--s')" step="0.1"/>
+<span></span>
+</label>
+
+<label>
+<span title="Perspective">P</span>
+<input type="range" id="perspective" min="1000" max="4000" value="2000" onchange="apply(this, '--p', 'px')" oninput="apply(this, '--p', 'px')" step="1"/>
+<span></span>
+</label>
+<br>
+<center>
+<button onclick="document.querySelector('.object3d').classList.toggle('rotate')">Spin 360°</button>
+<button class="ehide" onclick="controls.classList.toggle('hide')">Controls</button>
+</center>
+</span>
+
+<script src="script.js"type="text/javascript"></script>
+<script type="text/javascript"></script>
+</body>
+</html>
